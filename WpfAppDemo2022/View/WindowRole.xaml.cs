@@ -1,4 +1,5 @@
 ﻿using System.Windows;
+using WpfAppDemo2022.ViewModel;
 
 namespace WpfAppDemo2022.View
 {
@@ -10,6 +11,8 @@ namespace WpfAppDemo2022.View
         public WindowRole()
         {
             InitializeComponent();
+            RoleViewModel vmRole = new RoleViewModel();
+            lvRole.ItemsSource = vmRole.ListRole;
         }
     }
 }
