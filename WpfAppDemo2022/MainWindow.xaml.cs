@@ -1,5 +1,6 @@
 ﻿using System.Windows;
 using WpfAppDemo2022.View;
+using WpfAppDemo2022.ViewModel;
 
 namespace WpfAppDemo2022
 {
@@ -9,6 +10,11 @@ namespace WpfAppDemo2022
     public partial class MainWindow : Window
     {
         public static int IdRole { get; set; }
+        public static int IdEmployee { get; set; }
+        public static RoleViewModel vmRole { get; set; }
+        public static PersonViewModel vmPerson { get; set; }
+
+
         public MainWindow()
         {
             InitializeComponent();
