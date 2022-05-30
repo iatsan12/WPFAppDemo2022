@@ -12,5 +12,13 @@ namespace WpfAppDemo2022.Model
             this.Id = id;
             this.NameRole = nameRole;
         }
+        /// <summary>
+        /// Метод поверхностного копирования 
+        /// </summary>
+        /// <returns></returns>
+        public Role ShallowCopy()
+        {
+            return (Role)this.MemberwiseClone();
+        }
     }
 }
